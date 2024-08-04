@@ -1,0 +1,94 @@
+body {
+   font-family: Arial, sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+}
+.container {
+   margin: 0 auto;
+   padding-right: 10px;
+   min-width: 300px;
+   max-width: 1000px;
+   width: 100%;
+}
+
+.title-block {
+   font-size: 24px;
+   line-height: 1.4;
+   margin-bottom: 15px;
+}
+
+.credits__list {
+   display: grid;
+}
+
+.credit {
+   border: 1px solid #ebebeb;
+   border-radius: 3px;
+   padding: 20px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 200px ;
+   align-items: center;
+   grid-template-areas:'info rate time btn';
+}
+
+.credit:hover {
+   box-shadow: 0px 4px 15px 0px rgba(0, 17, 51, 0.1);
+}
+
+.credit__info {
+   display: grid;
+   grid-template-columns: 30px 1fr;
+   grid-gap: 10px 20px;
+   grid-area: info;
+}
+.credit__info-logo img {
+   max-width: 100px;
+   height: auto;
+}
+
+.credit__info-name {
+   font-size: 12px;
+   color: #6b737d;
+   margin-top: 5px;
+   
+}
+
+.credit__rate {
+   grid-area: rate;
+}
+
+.credit__time {
+   grid-area: time; 
+}
+
+.credit__btn {
+   grid-area: btn; 
+   
+}
+
+.accent {
+   color: red;
+   font-size: 20px;
+}
+
+.credit-subtitle {
+   font-size: 0.8em;
+   color: #666;
+}
+
+.btn {
+   width: 100%;
+   background: #f78f1e;
+   color: #fff;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   padding: 7px 19px;
+   line-height: 27px;
+   font-size: 16px;
+}
+
+.btn:hover {
+   background-color: #e86809;
+}
